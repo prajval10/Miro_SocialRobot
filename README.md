@@ -33,13 +33,12 @@ For all gesture recognitions we have very good accuracy (94%) and for some high 
 
 Gestures with low precision:
 
-Pat Body (high false positive rate: we predict pat-body when it is actually not pat-body)
+  1. Pat Body (high false positive rate: we predict pat-body when it is actually not pat-body)
 
 Gestures with High precision (because the sensors are decopled):
 
-Pat Head
-
-Fixed Head
+  1. Pat Head
+  2. Fixed Head
 
 ### Modules or Nodes in the system
 Offline part: 2 files (collecting and storing data, training the RNN)
@@ -52,6 +51,7 @@ Online part: 2 ROS-nodes (data input and machinelearning, miro actions)
   Optimize the number of Hidden Neurons
 #### Online part:
   After classification(recognizing) of gesture, we must have a voting system. As there is a sliding window, there are jumps in classified outputs, hence we must take the average (do the voting system)
+  
   Analyse the temporal performace (latency), ie, the time taken for action to happen after doing the gesture.
  
 
