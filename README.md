@@ -1,4 +1,4 @@
-# Human touch-gesture recognition using MiRo Social Robot
+# [SoRo Project] Human touch-gesture recognition using MiRo Social Robot
 
 ## Project Contributers: 
 1. Prajval Kumar Murali (prajval10@gmail.com)
