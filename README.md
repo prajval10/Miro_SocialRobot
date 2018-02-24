@@ -1,4 +1,4 @@
-# Gesture Recognition using MiRo Social Robot
+# [SoRo Project] Human touch-gesture recognition using MiRo Social Robot
 
 ## Project Contributers: 
 1. Prajval Kumar Murali (prajval10@gmail.com)
@@ -11,9 +11,9 @@ Detecting	and	classifying	touch	patterns with	MiRo. Doing deeplearning using Ten
 
 ## Accomplishments
 
-Collected (recorded from MiRo tactile sensors and saved to a text file) 6 types of gesture data from 9 persons. Each person repeating the gesture 10 times
+### Collected (recorded from MiRo tactile sensors and saved to a text file) 6 types of gesture data from 9 persons. Each person repeating the gesture 10 times
 
-### Gestures:
+#### Gestures:
   1. Caress body top-bottom
   2. Caress body bottom-top
   3. Pat body
@@ -21,7 +21,7 @@ Collected (recorded from MiRo tactile sensors and saved to a text file) 6 types 
   5. Pat Head
   6. Fixed Head
   
-### Actions
+#### Actions
   1. Go straight forward
   2. Go straight backward
   3. Go in circle
@@ -31,14 +31,13 @@ Collected (recorded from MiRo tactile sensors and saved to a text file) 6 types 
   
 For all gesture recognitions we have very good accuracy (94%) and for some high precision and for some low precision.
 
-Gestures with low precision:
+#### Gestures with low precision:
 
 Pat Body (high false positive rate: we predict pat-body when it is actually not pat-body)
 
-Gestures with High precision (because the sensors are decopled):
+#### Gestures with High precision (because the sensors are decopled):
 
 Pat Head
-
 Fixed Head
 
 ### Modules or Nodes in the system
@@ -47,15 +46,22 @@ Online part: 2 ROS-nodes (data input and machinelearning, miro actions)
 
 ### Limitations of the system
 #### Offline part:
-  Improve the precision and recall for all the gestures
+Improve the precision and recall for all the gestures
   
-  Optimize the number of Hidden Neurons
-#### Online part:
-  After classification(recognizing) of gesture, we must have a voting system. As there is a sliding window, there are jumps in classified outputs, hence we must take the average (do the voting system)
-  Analyse the temporal performace (latency), ie, the time taken for action to happen after doing the gesture.
- 
+Optimize the number of Hidden Neurons
 
-### How to run:
+#### Online part:
+After classification(recognizing) of gesture, we must have a voting system. As there is a sliding window, there are jumps in classified outputs, hence we must take the average (do the voting system)
+  
+Analyse the temporal performace (latency), ie, the time taken for action to happen after doing the gesture.
+ 
+## How to run:
+
+### Configure MiRo with your workstation
+To configure MiRo with your workstation follow the setup guide on official website or https://github.com/EmaroLab/MIRO
+
+### To Run our application
+
 #### Offline part (Collecting data and training RNN)
 ```python
 #Collecting data after connecting to MiRo ROS node
