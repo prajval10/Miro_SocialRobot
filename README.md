@@ -80,3 +80,6 @@ python Data_input.py #remember to change the path to model :my_model_new.h5
 #miro actions 
 python miro_action.py #to move miro according to the gestures
 ```
+
+### Project Video
+Can be found here: https://www.youtube.com/watch?v=N7AkDnkxILg
